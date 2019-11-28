@@ -1,0 +1,22 @@
+
+<form (ngSubmit)="SignIn()">
+    <legend>Login Here</legend>
+
+    <div class="form-group">
+        <label for="uname">uname</label>
+        <input type="text" class="form-control" name="uname" id="uname" placeholder="uname" [(ngModel)]="userDetails.uname">
+    </div>
+
+    <div class="form-group">
+        <label for="pass">password</label>
+        <input type="password" class="form-control" name="pass" id="pass" placeholder="password" [(ngModel)]="userDetails.pass">
+    </div>
+
+    
+
+    <button type="submit" class="btn btn-primary" >Login</button>
+    
+    <span class="label label-warning">{{message}}</span>
+    
+</form>
+
